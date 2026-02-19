@@ -50,28 +50,6 @@
 
 ---
 
-## 🛠️ 개발 환경 및 빌드 (For Developers)
-
-이 프로젝트는 **Python 3.12**와 **Tkinter**를 사용하여 개발되었습니다.
-
-### 필요 라이브러리 설치
-```bash
-pip install -r requirements.txt
-```
-
-### 소스 코드 실행
-```bash
-python main.py
-```
-
-### 실행 파일(EXE) 만들기
-포함된 `build_exe.bat` 파일을 실행하거나 다음 명령어를 사용하세요.
-```bash
-pyinstaller --noconsole --onefile --add-data "toss.png;." --add-data "kakao.png;." --name "ZigZagPic_v2.2.4" --version-file "version_info.txt" main.py
-```
-
----
-
 ## 📝 라이선스 및 정보
 
 *   **Version**: v2.2.4
