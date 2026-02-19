@@ -55,7 +55,7 @@
 *   **Version**: v2.2.4
 *   **Developer**: mOOnster
 *   **Contact**: GitHub Issues 또는 이메일
-*   **License**: 이 프로그램은 누구나 자유롭게 수정하고 배포할 수 있습니다.
+*   **License**: 이 프로젝트는 [MIT License](LICENSE)를 따릅니다. 자세한 내용은 LICENSE 파일을 참고하세요.
 
 ---
 **Copyright (c) 2026 mOOnster. All rights reserved.**
