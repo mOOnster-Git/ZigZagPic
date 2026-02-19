@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec
+
+# PyInstaller
+build/
+dist/
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Others
+version.json

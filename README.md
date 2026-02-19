@@ -1,0 +1,83 @@
+# 🖼️ ZigZag Pic (지그재그 사진 정리) v2.2.4
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white">
+  <img src="https://img.shields.io/badge/License-MIT-green">
+</div>
+
+---
+
+## 💡 제작 의도 (Why ZigZag Pic?)
+
+여러 폴더에 흩어져 있는 사진들을 하나로 합쳐서 보고 싶은데, 단순히 복사해서 넣으면 이름 순서대로 정렬되어 한 폴더의 사진들만 쭉 나오다가 다음 폴더의 사진이 나오는 문제가 있었습니다.
+
+**"각 폴더의 사진들을 공평하게 섞어서 보고 싶다!"**
+
+이런 필요에 의해 **ZigZag Pic**을 만들게 되었습니다.  
+이 프로그램은 여러 폴더에서 사진을 **한 장씩 번갈아가며(ZigZag)** 가져와, 새로운 번호를 부여하여 저장해줍니다. 덕분에 어떤 폴더의 사진이든 골고루 섞여서 볼 수 있습니다.
+
+---
+
+## ✨ 주요 기능 (Features)
+
+*   **📂 공평하게 섞기 (Interleaving)**: A폴더 1장, B폴더 1장, C폴더 1장... 순서로 가져와 섞습니다.
+*   **👀 미리보기 (Preview)**: 실제로 파일을 생성하기 전에, 어떤 이름으로 저장될지 미리 확인할 수 있습니다.
+*   **🔢 자동 파일명 생성**: `001_폴더명.jpg`, `002_폴더명.jpg` 형태로 깔끔하게 이름을 정리해줍니다.
+*   **🛡️ 안전한 저장**: 원본 파일은 그대로 두고, 바탕화면에 날짜/시간이 적힌 새 폴더를 만들어 복사본을 저장합니다.
+*   **🚀 간편한 사용**: 복잡한 설정 없이 폴더만 선택하고 버튼을 누르면 끝!
+
+---
+
+## 📖 사용 방법 (How to Use)
+
+### 1. 프로그램 실행
+[Releases] 페이지에서 최신 버전(`ZigZagPic_v2.2.4.exe`)을 다운로드하여 실행합니다.
+(설치 과정 없이 바로 실행됩니다.)
+
+### 2. 폴더 추가
+*   **[+ 폴더 추가]** 버튼을 눌러 사진이 들어있는 폴더들을 선택합니다.
+*   최소 2개 이상의 폴더가 필요합니다.
+*   필요하다면 각 폴더별로 **'접두사'**를 입력하여 파일명에 포함시킬 수 있습니다. (예: `여행_`, `가족_`)
+
+### 3. 미리보기 확인
+*   하단 로그 창에 **"작업 요약"**, **"생성될 파일명 예시"**, **"저장될 위치"**가 표시됩니다.
+*   내용이 맞는지 확인하세요.
+
+### 4. 합치기 시작
+*   **[합치기 시작]** 버튼을 누르면 작업이 진행됩니다.
+*   작업이 완료되면 자동으로 생성된 폴더가 열립니다.
+
+---
+
+## 🛠️ 개발 환경 및 빌드 (For Developers)
+
+이 프로젝트는 **Python 3.12**와 **Tkinter**를 사용하여 개발되었습니다.
+
+### 필요 라이브러리 설치
+```bash
+pip install -r requirements.txt
+```
+
+### 소스 코드 실행
+```bash
+python main.py
+```
+
+### 실행 파일(EXE) 만들기
+포함된 `build_exe.bat` 파일을 실행하거나 다음 명령어를 사용하세요.
+```bash
+pyinstaller --noconsole --onefile --add-data "toss.png;." --add-data "kakao.png;." --name "ZigZagPic_v2.2.4" --version-file "version_info.txt" main.py
+```
+
+---
+
+## 📝 라이선스 및 정보
+
+*   **Version**: v2.2.4
+*   **Developer**: mOOnster
+*   **Contact**: GitHub Issues 또는 이메일
+*   **License**: 이 프로그램은 누구나 자유롭게 수정하고 배포할 수 있습니다.
+
+---
+**Copyright (c) 2026 mOOnster. All rights reserved.**
